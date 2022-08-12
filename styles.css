@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgb(231, 57, 109);
+    color: white;
+    height: 90px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    padding-left: 42%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.gamecontainer {
+    background-color: black;
+    justify-content: center;
+    display: flex;
+
+}
+
+.boxtext {
+    color: wheat;
+}
+
+.info {
+    color: rgb(235, 194, 245);
+    font-size: 25px;
+    padding: 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.box {
+    border: 2px solid white;
+    font-size: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(185, 141, 99);
+    cursor: pointer;
+}
+
+#reset {
+    padding: 5%;
+    font-size: 20px;
+    background-color: #a1fcf7;
+    color: #1C0A00;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+#reset:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.imgbox {
+    align-items: center;
+    height: 0;
+    width: 0;
+    padding: 5%;
+    visibility: hidden;
+}
+
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.gameinfo {
+
+    padding-left: 10%;
+}
+
+h1 {
+    padding: 5%;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(245, 222, 222);
+}
+
+.bt {
+    border-top: 0;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+/* .line{
+
+    background-color: white;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+} */
+@media screen and (max-width: 950px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo {
+        margin-top: 34px;
+    }
+
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
